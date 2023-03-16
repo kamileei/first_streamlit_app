@@ -74,5 +74,5 @@ def insert_row_snow(new_fruit):
 if not new_fruit:
   streamlit.error("Please select a fruit to add.")
 else:
-  insert_row_snow(new_fruit)
+  streamlit.write(insert_row_snow(new_fruit))
     
