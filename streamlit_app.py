@@ -67,9 +67,9 @@ if streamlit.button('Get Fruit List'):
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
   new_fruit = streamlit.text_input('What fruit would you like to add?')
-  if not new_fruit:
-    streamlit.error("Please select a fruit to add.")
-  else:
-    streamlit.write(insert_row_snow())
+if not new_fruit:
+  streamlit.error("Please select a fruit to add.")
+else:
+  streamlit.write(insert_row_snow())
   
     
