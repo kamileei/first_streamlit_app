@@ -62,7 +62,7 @@ def insert_row_snow(new_fruit):
     return "Thanks for adding " + new_fruit
   
 #add a button to load the fruit
-while streamlit.button('Get Fruit List'):
+if streamlit.button('Get Fruit List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
@@ -70,5 +70,7 @@ while streamlit.button('Get Fruit List'):
   if not new_fruit:
     streamlit.error("Please select a fruit to add.")
   else:
-    streamlit.write(insert_row_snow(new_fruit))
+    continue
+  streamlit.write(insert_row_snow)
+  
     
