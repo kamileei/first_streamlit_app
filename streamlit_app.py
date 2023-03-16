@@ -70,7 +70,7 @@ if streamlit.button('Get Fruit List'):
   if not new_fruit:
     streamlit.error("Please select a fruit to add.")
   else:
-    continue
+    break
   streamlit.write(insert_row_snow())
   
     
