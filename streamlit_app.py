@@ -71,6 +71,6 @@ if streamlit.button('Get Fruit List'):
     streamlit.error("Please select a fruit to add.")
   else:
     continue
-  streamlit.write(insert_row_snow)
+  streamlit.write(insert_row_snow())
   
     
